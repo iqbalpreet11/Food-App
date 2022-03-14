@@ -1,6 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300;400;700&family=Roboto+Condensed&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto condensed', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +18,131 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --primary-color: #E5B528;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1,h2 {
+  font-family: 'Source Serif 4', sans-serif;
+}
+
+h1{
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin: .5rem;
+}
+.btn{
+  padding: .7rem 1.5rem;
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 25px;
+  font-size: 1.4rem;
+}
+
+.btn-dark{
+    background-color: #000;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 740px) {
+  h1{
+    font-size: 3rem;
+      }
+  h2{
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+--flex-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+--card{
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgb(0, 0, 0);
+}
+
+--center-all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+--form-control{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+--form-control > * {
+     margin:5px 0;
+}
+
+--width-100{
+  width: 450px;
+}
+
+--flex-start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+--flex-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+--text-sm{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+--btn{
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 6px 8px;
+  margin: 0 5px 0 0;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+--btn-primary{
+  color: #fff;
+  background: #007bff;
+}
+--btn-block{
+  width: 100%;
 }
